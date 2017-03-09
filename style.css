@@ -1,0 +1,79 @@
+html, body {
+  height:80%;
+}
+
+
+#top_right_col {
+  background-image: "resources/track.fw.png";
+  opacity: 0.19;
+}
+
+.header {
+position: fixed top;
+height: 10vh;
+background-color: green;
+text-align: center;
+
+}
+
+.footer {
+  position: absolute;
+  position: fixed bottom;
+  margin: -2px;
+  height: 10vh;
+  background-color: green;
+  text-align: center;
+  visibility: visible;
+  z-index: 999;
+
+  }
+
+
+#track.fw.png {
+  opacity: 19%;
+}
+
+.borderblack {
+  border: 3px solid black;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    border-width: medium;
+    padding: 14px 40px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    align-items: center;
+    -webkit-transition-duration: 0.5s; /* Chrome */
+    transition-duration: 0.5s;
+}
+
+.button:hover {
+    background-color: gray; /* gray */
+    color: gray;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+h2 {
+  text-align: center;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.text-size {
+  font-size: 24px;
+}
