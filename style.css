@@ -1,79 +1,167 @@
-html, body {
-  height:80%;
+ body {
+  margin: 0px;
+  padding: 0px;
 }
 
+.container{
+  width: 100vw;
+  /*height: 100vh;*/
+  margin: 0px;
+  padding: 0px;
+}
 
-#top_right_col {
-  background-image: "resources/track.fw.png";
+.row header {
+  height: 6vh;
+  background-color: #9fa3ad;
+
+}
+
+.col_left {
+  height: 100vh;
+  background-color: #f2f0ec;
+}
+
+.right_col {
+  height: 100vh;
+  background-image: url("resources/track.fw.png");
   opacity: 0.19;
+  background-size: 100vh;
 }
 
-.header {
-position: fixed top;
-height: 10vh;
-background-color: green;
-text-align: center;
+.row footer {
+background-color: #9b8d85;
+height: 8vh;
 
 }
 
-.footer {
+#imgCol {
   position: absolute;
-  position: fixed bottom;
-  margin: -2px;
-  height: 10vh;
-  background-color: green;
-  text-align: center;
-  visibility: visible;
-  z-index: 999;
-
-  }
-
-
-#track.fw.png {
-  opacity: 19%;
+  top: 5vh;
+  right: 18vw;
 }
 
-.borderblack {
-  border: 3px solid black;
+#imgCol img {
+  margin-top: 20px;
+}
+
+.col-track-bin {
+  margin-top: 40vh;
+
+}
+.album_cover {
+  height: 180px;
+  width: 200px;
+  /*width: auto;;
+  height: auto;;
+  margin: 10px 10px;
+  z-index: 2;
+  opacity: 1;*/
+}
+
+.select_track {
+font-size: 2em;
+height: 25vh;
+background-color: blue;
+}
+
+.card {
+  height: 94vh;
+  width: 100vw;
+  color: white;
+}
+
+.card-header {
+  padding: 0px;
+  height: 6vh;
+  margin: 0px;
+  background-color: #00ffbf;
+  font: white;
+  font-size: 22px;
+}
+
+.card-block {
+
+  padding: 0px;
+  margin: 0px;
+  background-color: lightgray;
+  overflow-x: scroll;
+}
+
+#carousel {
+    padding: 20px 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: visible;
+    white-space:nowrap;
+}
+
+#carousel .slide {
+}
+
+#carousel img {
+  margin-right: 15px;
+  height: 200px;
+  width: 140px;
+  display: inline-block;
+}
+.card-title {
+  padding: 0px;
+  /*position: relative;*/
+
+}
+
+.card-footer {
+  margin: 0px;
+  height: 8vh;
+  background-color: #00ffbf;
+  font-size: 17px;
+  color: white;
 }
 
 .button {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    font-size: 20px;
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
     width: 200px;
-    height: 40px;
-    border-width: medium;
-    padding: 14px 40px;
-    margin: auto;
     text-align: center;
+    -webkit-transition-duration: 0.6s; /* Safari */
+    transition-duration: 0.6s;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
-    align-items: center;
-    -webkit-transition-duration: 0.5s; /* Chrome */
-    transition-duration: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
 }
+
 
 .button:hover {
-    background-color: gray; /* gray */
-    color: gray;
+    background-color: #4CAF50; /* Green */
+    color: white;
 }
 
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
 }
 
-h2 {
-  text-align: center;
-  margin: auto;
-  vertical-align: middle;
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0.5s
 }
 
-.text-size {
-  font-size: 24px;
+.col-md-8.col-bttn {
+  padding: 10px 0;
+
+
 }
