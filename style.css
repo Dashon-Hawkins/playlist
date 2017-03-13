@@ -1,67 +1,103 @@
- body {
-  margin: 0px;
-  padding: 0px;
-}
-
-.container{
+css file
+.container-fluid {
+  font-family: Avenir, Avenir;
+  border: 1px solid black;
   width: 100vw;
-  /*height: 100vh;*/
+
+}
+
+.row {
   margin: 0px;
-  padding: 0px;
+  padding: 0;
+  width: 100vw;
+}
+#splash-header {
+  background-color: #9a9b84;
+  border: 0px solid black;
+  margin: 0px;
+  height: 8vh;
+  width: 100vw;
+
 }
 
-.row header {
-  height: 6vh;
-  background-color: #9fa3ad;
-
+#splash-footer {
+  background-color: #9a9b84;
+  border: 3px solid;
+  margin: 0px;
+  color: white;
+  height: 12vh;
 }
 
-.col_left {
-  height: 100vh;
-  background-color: #f2f0ec;
-}
-
-.right_col {
-  height: 100vh;
-  background-image: url("resources/track.fw.png");
+.col-borderRt  {
+  height: 80vh;
+  background-image: url('resources/track.jpg');
+  z-index: 1;
+  background-position: center;
+  background-size: 500px;
+  background-repeat: repeat-y;
   opacity: 0.19;
-  background-size: 100vh;
+  filter: alpha(opacity=50);
 }
 
-.row footer {
-background-color: #9b8d85;
-height: 8vh;
 
+#track_bin {
+   align-items: center;
+   font-size: 42px;
+   color: purple;
 }
 
-#imgCol {
-  position: absolute;
-  top: 5vh;
-  right: 18vw;
+.col-borderLft  {
+   height: 80vh;
 }
 
-#imgCol img {
-  margin-top: 20px;
-}
 
-.col-track-bin {
-  margin-top: 40vh;
-
-}
-.album_cover {
-  height: 180px;
+.btn-default {
+  position: 0px;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 20px;
   width: 200px;
-  /*width: auto;;
-  height: auto;;
-  margin: 10px 10px;
-  z-index: 2;
-  opacity: 1;*/
+  text-align: center;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
+
+
+.btn-default:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.btn-default:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.btn-default:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0.5s
+}
+
 
 .select_track {
 font-size: 2em;
 height: 25vh;
-background-color: blue;
+
 }
 
 .card {
@@ -74,7 +110,7 @@ background-color: blue;
   padding: 0px;
   height: 6vh;
   margin: 0px;
-  background-color: #00ffbf;
+  background-color: rgb(154, 156,	139);
   font: white;
   font-size: 22px;
 }
@@ -83,7 +119,7 @@ background-color: blue;
 
   padding: 0px;
   margin: 0px;
-  background-color: lightgray;
+  background-color: rgb(255,255,255);
   overflow-x: scroll;
 }
 
@@ -104,61 +140,21 @@ background-color: blue;
   width: 140px;
   display: inline-block;
 }
+
 .card-title {
   padding: 0px;
-  /*position: relative;*/
+  position: relative;
 
 }
 
 .card-footer {
   margin: 0px;
   height: 8vh;
-  background-color: #00ffbf;
+  background-color: rgb(154, 156, 139);
   font-size: 17px;
   color: white;
 }
 
-.button {
-    position: relative;
-    background-color: #4CAF50;
-    border: none;
-    font-size: 28px;
-    color: #FFFFFF;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    -webkit-transition-duration: 0.6s; /* Safari */
-    transition-duration: 0.6s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-
-.button:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
-}
-
-.button:after {
-    content: "";
-    background: #f1f1f1;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-}
-
-.button:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0.5s
-}
 
 .col-md-8.col-bttn {
   padding: 10px 0;
